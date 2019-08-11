@@ -8,13 +8,15 @@ String.prototype.reverse = function(){
 function Phrase(content){
   this.content = content;
 
-  this.processor = function(string){
-    return string.toLowerCase();
-  }
-
   // processed
   this.processedContent = function processedContent(){
-    return this.processor(this.content);
+    return this.letters().toLowerCase();
+    // return this.content;
+  }
+
+  // letters
+  this.letters = function letters(){
+    return (this.content.match(/[a-z]/ig) || []).join("");
   }
 
   // is palindrome
