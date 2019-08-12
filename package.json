@@ -1,6 +1,6 @@
 {
   "name": "sshimizu-palindrome",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "palindrome detectoo",
   "main": "index.js",
   "scripts": {
